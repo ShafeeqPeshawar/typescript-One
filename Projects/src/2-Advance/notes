@@ -1,0 +1,35 @@
+
+Topics covered here:
+
+1. Type Aliases:
+
+2. Unions and Intersections
+	A union type describes a value that can be one of several types. We use the vertical bar (|) to separate each type, so number | string | boolean is the type of a value that can be a number, a string, or a boolean.
+
+	Union | (OR)
+	-------------------------
+
+	let accnumber :(string|number)
+	------------------------------------
+	function printStatusCode(code: string | number) {
+  		console.log(`My status code is ${code}.`)
+	}
+	printStatusCode(404);
+	printStatusCode('404');
+	-----------------------------------------------
+	interface Bird {
+ 		fly(): void;
+  		layEggs(): void;
+	}
+ 
+	interface Fish {
+  		swim(): void;
+  		layEggs(): void;
+	}
+	declare function getSmallPet(): Fish | Bird;
+
+
+3. Type Narrowing
+4. Nullable Types
+5. The Unknown Type
+6. The Never Type
