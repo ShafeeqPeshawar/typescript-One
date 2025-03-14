@@ -2,7 +2,7 @@
 
    if want to import every thing from the module
 
-   every thing which 4-A.Modules is exporting are importeed and stored in the object Everything
+   every thing which 4-A.Modules is exporting are imported and stored in the object Everything
 */
 
 import * as EveryThing from "./4-A-Modules"

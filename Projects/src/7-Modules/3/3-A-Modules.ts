@@ -2,10 +2,10 @@
 
 /*
 
-    we cant use these classes anywhere else unless we export them
+    we cant use these classes anywhere else, unless we export them
 
     we want class CircleMM should be visible to outside world and by default
-    but you can export other thins as well
+    but you can export other things as well
 
 */
  function message():void{

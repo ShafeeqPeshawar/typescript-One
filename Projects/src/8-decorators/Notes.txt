@@ -13,15 +13,14 @@ tsconfig.json:
 }
 
 Decorators is the mechahism of adding metadata, information or 
-logic to ot preexisting sorce code
+logic to a  preexisting source code
 
-
-Decorator are attrubites applied to classes anc their members
-and with this we cna change how they behave
+Decorator are attrubites applied to classes and their members
+and with this we can change how they behave
 
 This decorator is just a function which is called by JAvascript runtime. 
 SO JS engine or runtime should class this function(decorator) 
-and pass our class to it so in that functio nwe have a chance to modify the class
+and pass our class to it so in that function nwe have a chance to modify the class
 so me can add new propertie , methods new data members or can change the implementation 
 to the function
 

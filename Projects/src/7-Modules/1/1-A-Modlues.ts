@@ -2,7 +2,7 @@
 
 /*
 
-    we cant use these classes anywhere else unless we export them
+    we cant use these classes anywhere else, unless we export them
 
 */
 export function message():void{

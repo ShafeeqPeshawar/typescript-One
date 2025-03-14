@@ -14,7 +14,7 @@ function addT<T extends string | number>(a: T, b: T): T {
   
   console.log(addT(5, 10));                  // Output: 15
   console.log(addT("Hello, ", "World!"));    // Output: Hello, World!
-  addT(true,false)                           // no allowed
+  addT(true,false)                           // not allowed
   
 
   // the following function can accept any type

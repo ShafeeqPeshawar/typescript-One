@@ -28,12 +28,13 @@ function ComponentAX(constructor1:Function){
 
     /*
       constructor1 is a parameter which will
-     recieve the constructor fo the class on which this decorater si applied
+     recieve the constructor fo the class on which this decorater is applied
 
      this paramater can be used to
       - Access the class name.
       - Modify the class by returning a new constructor.
       - Add properties or methods to the prototype or class itself.
+      - Remove propertied or methis to the prototype  or class itself.
 
 */
     console.log("Class Name:",constructor1.name)

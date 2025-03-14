@@ -2,7 +2,7 @@
 /*
 
 error in the following class
-the data member must be initilized and must be initilized in the constructor
+the data member  must be initilized in the constructor
 
 class Account{
 
