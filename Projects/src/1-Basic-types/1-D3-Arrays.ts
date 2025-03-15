@@ -99,10 +99,44 @@ Array Methods
 
 */
 
-let datar:(number|string)[]=[1,"Shafeeq",89,76,78,"Manchester"]
-console.log(datar[0])
-console.log(datar[1])
-console.log("--------------------------------------")
-for (let x of datar) {
-    console.log(x);
-    }
+let names: string[] = ["Alice", "Bob", "Charlie"];
+names.push("John")
+console.log(names)
+names.push(42); // Error: Argument of type '42' is not assignable to type 'string'
+names.push("Tadas")
+console.log(names)
+names.pop();   // Removes the last element
+console.log(names)
+names.shift();    // Removes the first element
+console.log(names)
+
+//----------------------------------------------
+// Union Arrays:
+
+    let mixed: (number | string)[] = [1, "two", 3];
+    //You can allow multiple types in an array using a union type:
+    mixed.push("four"); // OK
+    mixed.push(82); // OK
+    console.log(mixed)
+    mixed.push(true); // error
+
+    let mixed2: (number | string|true)[] = [1, "two", 3,true];
+
+    
+// --------------------------------------------------------
+    // Readonly vs Mutable Arrays
+    //TypeScript allows you to declare arrays as immutable using readonly:
+    let mutableArray: number[] = [1, 2, 3];
+    mutableArray[0] = 10; // OK
+    mutableArray.push(34) // all good 34 will be added to array
+
+    
+//---------------------------------------------------------
+    // Readonly vs Mutable Arrays
+    let immutableArray: readonly number[] = [1, 2, 3];
+    immutableArray.push(45) // not allwed as its an read only array
+
+//---------------------------------------------------------
+    // Readonly vs Mutable Arrays
+    let immutableArray2: readonly (number|string)[] = [1, 2, 3,"shafeeq"];
+    immutableArray.push(45) // not allwed as its an read only array

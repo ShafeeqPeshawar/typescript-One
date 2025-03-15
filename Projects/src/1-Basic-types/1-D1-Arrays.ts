@@ -20,7 +20,7 @@ let salarys=[102,788,400]
 console.log(salarys[2])
 
 
-// thsi will declare an array of type any, in which anthing can be stored
+// this will declare an array of type any, in which anthing can be stored
 //  hover the mouse over the itesm and you will see the type of the array
 
 
@@ -31,7 +31,9 @@ items[2]=true
 items[3]={regno:101,name:"peter"}
 console.log(items[3])
 console.log("-----------------------")
-items.forEach((item)=>{console.log(item)})
+items.forEach((item)=>{
+        console.log(item)
+    })
 
 
 

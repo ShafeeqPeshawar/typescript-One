@@ -17,8 +17,9 @@ let marks:100
 // now marks type is 89 and we can only store 89 in the variable and nothing else
 
 
-// marks = 99  will not work only 100 is assignable
+ marks = 99  //will not work only 100 is assignable
 marks = 100
+
 
 console.log(marks)
 

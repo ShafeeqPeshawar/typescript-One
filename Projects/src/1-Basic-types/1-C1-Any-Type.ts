@@ -38,7 +38,7 @@ x=true
 /*
 
 when the variable is declred with any type , in that variable we can store any type of data
-but his is againt the phlosphi of typescript
+but his is against the philosophy of typescript
 we use typescript for type safety, we use typescript because its typesafe
 the best practice is to avoid using any type
 
@@ -51,3 +51,14 @@ Opt-Out of Type Safety:
 Fallback Type: 
     It is commonly used when you don't know the type of a value at compile time, or when working with third-party libraries or legacy code without type definitions.
 */
+
+/*
+
+if we create a function with a parameter with out defining its type its ANY
+
+*/
+
+function addition(a,b){
+
+    return a+b
+}

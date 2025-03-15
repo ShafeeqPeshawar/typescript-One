@@ -19,10 +19,9 @@ type subjects = "HTML" | "CSS" | "Java"
 let subject:subjects
 
 //subject="Python"
-
-
-
 subject="HTML"
+subject="CSS"
+subject="C Sharp" // not allowed
 console.log(subject)
 
 

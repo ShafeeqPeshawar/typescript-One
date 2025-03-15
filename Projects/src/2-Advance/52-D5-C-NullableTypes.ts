@@ -1,4 +1,11 @@
+/*
 
+tsconfig.json
+
+    strictNullChecks:true
+    make this false and typescript will ignore the null values
+
+    */
 
 function message1(name:string){
 

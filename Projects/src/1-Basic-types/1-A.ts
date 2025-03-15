@@ -17,3 +17,11 @@ let x=10
 automatically x is declared as number as it will look at the data we are assigninh to the variable
 
 */
+// they are good as well
+
+let a=10
+let myname="Shafeeq"
+
+// a='Shafeeq' this is wrong as its number now
+
+
