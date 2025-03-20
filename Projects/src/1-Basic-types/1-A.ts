@@ -20,7 +20,7 @@ automatically x is declared as number as it will look at the data we are assigni
 // they are good as well
 
 let a=10
-let myname="Shafeeq"
+let name1="Shafeeq"
 
 // a='Shafeeq' this is wrong as its number now
 

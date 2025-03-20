@@ -25,28 +25,27 @@ Important Notes
 */
 
 
-function ComponentA(valueM:Function){
+function ComponentA1(valueM:Function){
 
-    console.log("Class Name:",valueM.name)
-    console.log(valueM.prototype)
-    
-
-
-
+    console.log("Class Name::",valueM.name)
+    //console.log(valueM.prototype)
 }
 
-@ComponentA
-class FirstClassAAA{
+//class One123{
+//    public accountNO:String=123
+//}
 
+@ComponentA1
+class FirstClassAAA extends One123{
     static dollar:number=203
     myaddress:string="London"
     constructor(public physics:number){
-
+        super()
     }
 
     public mymessage(){
         console.log("Hello My friends:")
-}
+    }
 
 }
 

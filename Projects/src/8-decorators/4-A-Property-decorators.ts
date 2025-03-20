@@ -16,24 +16,22 @@ propertyKey:
     The name of the property being decorated.
 */
 function PropertyDecorator1(){
-    return function(targetx:any,propertyKey:string){
-    console.log(`Property "${propertyKey}" is being decorated on`, targetx);
-    /*  
+    return function (target: any, propertyKey: string) {
+        console.log("*")
+        let value: number = 0; // Default value
 
-        target: represet the object in which this property is
-        key: represents how to get this particlat property from the object i.e target
-
-        so
-            target[key]
-
-
-
-    */
-    console.log(targetx,propertyKey)
-    console.log(targetx[propertyKey])
-
-    targetx[propertyKey] = targetx[propertyKey]+200
-    }
+        Object.defineProperty(target, propertyKey, {
+            get: function () {
+                return value;
+            },
+            set: function (newValue: number) {
+                //console.log(`Setting ${propertyKey} to:`, newValue);
+                value = newValue + 100; // Add 100 to any assigned value
+            },
+            enumerable: true,
+            configurable: true,
+        });
+    };
 }
 
 
@@ -46,4 +44,6 @@ class BankOfEnglandQ{
 
 let QA12 = new BankOfEnglandQ()
 QA12.balance=20
- console.log(QA12.balance)
+console.log("Balance:",QA12.balance)
+QA12.balance=100
+console.log("Balance:",QA12.balance)

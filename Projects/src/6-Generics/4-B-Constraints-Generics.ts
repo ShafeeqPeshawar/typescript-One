@@ -9,6 +9,7 @@ T must be a string or a number
 */
 
 function addT<T extends string | number>(a: T, b: T): T {
+  
     return (a as any) + (b as any);
   }
   

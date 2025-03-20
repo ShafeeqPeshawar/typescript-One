@@ -28,12 +28,8 @@ Important Notes
 function ComponentA(valueM:Function){
 
         console.log("Class Name:",valueM.name)
-        valueM.prototype.x ="Manchester"
-        valueM.y ="Manchester123" // defining static member in the class
-        
-   
-   
-
+        valueM.prototype.x ="Instance Manchester" //Adds a new instance property x with the value "Manchester" to the class.
+        valueM.y ="Static Manchester" // defining static member in the class
   }
   
   @ComponentA
@@ -50,8 +46,8 @@ function ComponentA(valueM:Function){
    
 let refT=new FirstClassAA()
 refT.message()
-console.log(refT.address)
-console.log(refT.x)
-console.log(refT.address)
-console.log(FirstClassAA.y)
+console.log("Address:",refT.address)
+console.log("Non Static Property:",refT.x)
+//console.log(refT.address)
+console.log("Static Property:",FirstClassAA.y)
 

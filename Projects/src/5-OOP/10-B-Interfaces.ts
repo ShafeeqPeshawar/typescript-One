@@ -1,28 +1,11 @@
-
-
- interface StateBankUK1{
-
-      accoutnOpen():void;
-      deposite(amount:number):void;
-      withdraw(amount:number):void;
+interface Employee {
+    name: string;
+    age: number;
+    department?: string; // Optional property
 }
 
+const emp11: Employee = { name: "Alice", age: 25 };
+const emp22: Employee = { name: "Bob", age: 30, department: "HR" };
 
-class HSBC_UK1 implements StateBankUK1{
-
-    public accoutnOpen():void{
-
-        console.log("Account Open")
-    }
-    public deposite(amount:number):void{
-        console.log("DEposite Amount:",amount)
-    }
-    public withdraw(amount:number):void{
-        console.log("WitDraw Amount:",amount)
-    }
-
-}
-let refX1=new HSBC_UK1();
-refX1.accoutnOpen()
-console.log("-----------------------------")
-
+console.log(emp11.department); // ✅ Output: undefined
+console.log(emp22.department); // ✅ Output: HR

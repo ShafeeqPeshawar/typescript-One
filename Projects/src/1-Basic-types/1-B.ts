@@ -14,4 +14,4 @@ if (salary>=2000){
 
 console.log("Employee Name:",ename)
 console.log("Salary:",salary)
-console.log("Tac Calculated is:",tax)
+console.log("Tax Calculated is:",tax)

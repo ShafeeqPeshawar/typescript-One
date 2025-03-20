@@ -12,3 +12,4 @@ type C = A & B; // Intersection Type
 
 let obj: C = { x: 10, y: "hello" }; //  obj must have properties from both A and B.
 console.log(obj)
+

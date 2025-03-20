@@ -1,7 +1,7 @@
 
 /*
 
-    Method Component needs 2  paramater
+    Method Component needs 3  paramater
 
     1. Object that owns the target method
     2. Name of the target method

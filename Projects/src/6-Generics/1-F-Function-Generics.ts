@@ -1,10 +1,10 @@
 
-function Assignment<T>(value:T):T{
-    value.id+=10
+function Assignment<T extends { id: number }>(value:T):T{
+    console.log(value)
     return value
 }
 
-let employee:{
+let employeeX:{
 
     id:number;
     name: string;

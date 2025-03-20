@@ -8,12 +8,12 @@ interface meet certain requirements.
 
 */
 
-interface Person {
+interface PersonX {
     name: string;
     age: number;
   }
   
-  function greet<T extends Person>(person: T): void {
+  function greet<T extends PersonX>(person: T): void {
     console.log(`Hello, ${person.name}! You are ${person.age} years old.`);
   }
   
